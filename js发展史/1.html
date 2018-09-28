@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    /*
+    js:轻量级的 客户端脚本编程语言
+    js:是一个编程语言，它是具备一定的逻辑的，
+    拥有自己的编程思想
+    1）面向对象编程语言[oop] 
+        c++
+        JAVA
+        PHP
+        C#(.net)
+        js
+        ...
+    2)面向过程编程
+        C
+    html和css是标记语言
+    
+    目前js程序，所以不仅仅是客户端的语言了，基于NODE可以做服务
+    器端JS是全栈编程语言
+
+
+    创建变量的6中方式
+    1）var
+    2)function  创建函数（函数也是变量，只不过储存的值是函数的类型而已）
+    3）let
+    4)const   创建的是常量
+    5)import  基于ES6的模块规范导出需要的信息
+    6)class   基于ES6 创建类
+
+    常用的输出类型
+    1）alert
+    2)confirm 和alert中的用法一样，但是提供的提示框中有确定和取消的按钮
+    所以它是确认提示框，window.confirm()  window会舍去  
+    点击确认是（true）  点击取消是(false)
+    3) prompt  在confirm 的基础上增加输入框   （
+    输入框输入内容，则确定展示输入的内容，点击取消，为null）
+    4) console.log()
+        Elements:当前页面中的元素和样式在这里都可以看到，还可以调节样式
+        Console:控制台代码，可以在JS代码中通过.log输出到这里，在这里还可以直接编写JS代码
+        Sources:当然网站的源文件都在这里
+    5) console.dir: 比log输出的更加详细一些（尤其是输出对象数据值的时候）
+    6) console.table: 把一个JSON数据按照表格的方式输出
+    
+    isNaN 
+
+    NaN的比较
+    NaN == NaN  结果是false   NaN和谁都不相等，包括自己
+
+    强制类型转换为数字是Number
+    把引用数据类型值转换为数字：先把引用值调取toString转换为字符串；
+    然后再把字符串调取Number转换为数字
+
+    对象：
+    ({}).toString()   结果是NaN
+    数组：
+    [12,33].toString()  结果是NaN
+    [12].toString()  结果是12
+    [].toString()  结果是0
+
+
+    parseInt / parseFloat :
+    等同于Number,也是为了把其他类型的值转换为数组类型
+
+    Number:出现任意非有效数字字符，结果就是NaN
+
+    parseInt:把一个字符串中的整数部分解析出来
+    parseInt('width:13.5px')  结果是NaN   从字符串最左边字符开始查找有效
+    的数字字符，并且转换为数字，但是一旦遇到一个非有效数字，查找结束
+
+
+
+    parseFloat:把一个字符串中小数（浮点数）部分解析出来
+
+    */
+    var num = 12;
+    let falg = confirm(num);
+    alert(falg)
+    // var flag = confirm('确定要取消么');
+    // if(flag){
+    // }else{}
+    
+    </script>
+</body>
+</html>
